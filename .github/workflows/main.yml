@@ -7,7 +7,6 @@ on:
       - main
     paths:
       - jobs/autompg_pipeline/**
-      - .github/workflows/cli.yml
       - run-job.sh
       - setup.sh
      
