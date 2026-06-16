@@ -1,13 +1,16 @@
 name: cli-jobs-pipelines-autompg
 on:
+  workflow_dispatch: 
   push:
   pull_request:
     branches:
       - main
     paths:
+      - jobs/autompg_pipeline/**
+      - .github/workflows/cli.yml
       - run-job.sh
       - setup.sh
-      - jobs/**
+     
 jobs:
   build:
     runs-on: ubuntu-latest
